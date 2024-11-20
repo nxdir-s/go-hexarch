@@ -1,7 +1,11 @@
 package ports
 
-type DomainPort interface {
+import "context"
+
+type Orchestrator interface {
+	Run(ctx context.Context) error
 }
 
-type ServicePort interface {
+type Service interface {
+	Run(ctx context.Context) error
 }
