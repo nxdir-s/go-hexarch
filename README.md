@@ -6,9 +6,10 @@ This repository serves as a template and documentation on how to implement Hexag
 
 - [Hexagonal Architecture](#hexagonal-architecture)
 - [Project Structure](#project-structure)
-  - [Adapters](#adapters)
-  - [Core](#core)
-  - [Ports](#ports)
+  - [cmd](#cmd)
+  - [adapters](#adapters)
+  - [core](#core)
+  - [ports](#ports)
 - [Example Projects](#example-projects)
 
 ## Hexagonal Architecture
@@ -19,7 +20,7 @@ The idea of Hexagonal Architecture is to put inputs and outputs at the edges of 
 
 ## Project Structure
 
-The following diagrams the projects directory structure
+The following diagrams the project structure
 
 ```
 .
@@ -38,31 +39,35 @@ The following diagrams the projects directory structure
 
 ### cmd
 
+The cmd directory contains your applications main modules. The `main.go` file will be responsible for setting up dependencies and running the application
+
 ### adapters
 
-This directory contains the **primary** and **secondary** adapters that handle communication between external entities and the core of the application
+The adapters directory contains the **primary** and **secondary** modules that handle communication between external entities and the core of the application
 
 ### core
 
-This directory contains the applications core business logic. There are four main concepts/modules that define the core: **Domains**, **Entities**, **Services**, and **Value Objects**
+The core directory contains the applications business logic and will utilize a lite version of Domain Driven Design.
+
+There are four main concepts/modules that define the core: **Domains**, **Entities**, **Services**, and **Value Objects**
 
 - `Domains` can be thought of as "Orchestrators" for domain use cases. They orchestrate multiple services and implement business rules and validation logic specific to a domain
 - `Entities` are the domain objects
 - `Services` handle any actions specific to an entity.
-- `Value Objects`
+- `Value Objects` represent shared immutable data types
 
 ### ports
 
-This directory contains the port definitions that define how the core will interact with internal and external entities. It is split up into the following files:
+The ports directory contains the port definitions that define how the core will interact with internal and external entities. It is split up into the following files:
 
 - `core.go`
   - Contains interfaces that define how services and domains can interact with each other
 - `primary.go`
   - Contains interfaces that define how the core allows external entities to interact with it. Ex. `APIPort` defines how the core will allow APIs to interact with it
 - `secondary.go`
-  - Contains interfaces that define how the core wants to drive/interact with external entities. These entities are usually databases or downstream data sources, but can also be other internal applications or even a library
+  - Contains interfaces that define how the core wants to drive/interact with external entities. These entities are usually databases or some other data source, but can also be other internal applications or even a library
 
 ## Example Projects
 
-- `IdleRpg`
 - `GoMux`
+- `IdleRpg`
