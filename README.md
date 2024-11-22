@@ -18,7 +18,7 @@ This directory contains the **primary** and **secondary** adapters that handle c
 
 This directory contains the applications core business logic, with the following folder structure
 
-There are four main concepts that define the business logic: Domains, Entities, Services, and Value Objects
+There are four main concepts/modules that define the core: **Domains**, **Entities**, **Services**, and **Value Objects**
 
 - `Domains` can be thought of as "Orchestrators/Interactors" for domain use cases. They orchestrate multiple services and implement business rules and validation logic specific to a domain
 - `Entities` are the domain objects
@@ -35,3 +35,8 @@ This directory contains the port definitions that define how the core will inter
   - Contains interfaces that define how the core allows external entities to interact with it. Ex. `APIPort` defines how the core will allow APIs to interact with it
 - `secondary.go`
   - Contains interfaces that define how the core wants to drive/interact with external entities. These entities are usually databases or downstream data sources, but can also be other internal applications or even a library
+
+## Example Projects
+
+- `IdleRpg`
+- `GoMux`
