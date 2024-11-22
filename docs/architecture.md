@@ -24,7 +24,7 @@ Here is an extremely important thing about the adapters architecture – ports/a
 
 ## Primary/Driving side
 
-The driving actors are those that **start the interaction** with the application by initiating a query. For example, it can be the mobile application interface or user interface code of a web app. The user input passed into the UI is taken by the adapter and sent to the core through the port. Both the port (interface) and the implementation of the interface will be inside the core/hexagon.
+The driving actors are those that **start the interaction** with the application by initiating a query. For example, it can be the mobile application interface or user interface code of a web app. The user input passed into the UI is taken by the adapter and sent to the core through the port.
 
 ## Secondary/Driven side
 
