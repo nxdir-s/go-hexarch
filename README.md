@@ -36,22 +36,22 @@ The following diagrams the projects directory structure
     └── ports
 ```
 
-### Adapters
+### cmd
+
+### adapters
 
 This directory contains the **primary** and **secondary** adapters that handle communication between external entities and the core of the application
 
-### Core
+### core
 
-This directory contains the applications core business logic, with the following folder structure
-
-There are four main concepts/modules that define the core: **Domains**, **Entities**, **Services**, and **Value Objects**
+This directory contains the applications core business logic. There are four main concepts/modules that define the core: **Domains**, **Entities**, **Services**, and **Value Objects**
 
 - `Domains` can be thought of as "Orchestrators" for domain use cases. They orchestrate multiple services and implement business rules and validation logic specific to a domain
 - `Entities` are the domain objects
 - `Services` handle any actions specific to an entity.
 - `Value Objects`
 
-### Ports
+### ports
 
 This directory contains the port definitions that define how the core will interact with internal and external entities. It is split up into the following files:
 
