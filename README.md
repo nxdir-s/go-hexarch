@@ -1,6 +1,6 @@
 # Go HexArch
 
-This repository serves as a template and documents how to implement Hexagonal Architecture within a golang application
+This repository serves as a template and documentation on how to implement Hexagonal Architecture within a golang application
 
 ### Table of Contents
 
