@@ -43,7 +43,7 @@ The cmd directory contains your applications main modules. The `main.go` file wi
 
 ### adapters
 
-The adapters directory contains the **primary** and **secondary** modules that handle communication between external entities and the core of the application
+The adapters directory contains the **primary** and **secondary** modules that handle communication between external entities and the core of the application. Adapters will be responsible for any data tranformations required for communication, as well as error handling, telemetry, and logging
 
 ### core
 
