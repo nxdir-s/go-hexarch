@@ -10,6 +10,23 @@ The idea of Hexagonal Architecture is to put inputs and outputs at the edges of 
 
 ## Project Structure
 
+The following diagrams the projects directory structure
+
+```
+.
+├── cmd
+└── internal
+    ├── adapters
+    │   ├── primary
+    │   └── secondary
+    ├── core
+    │   ├── domain
+    │   ├── entity
+    │   ├── service
+    │   └── valobj
+    └── ports
+```
+
 ### Adapters
 
 This directory contains the **primary** and **secondary** adapters that handle communication between external entities and the core of the application
