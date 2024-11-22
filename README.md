@@ -2,6 +2,15 @@
 
 This repository serves as a template and documents how to implement Hexagonal Architecture within a golang application
 
+### Table of Contents
+
+- [Hexagonal Architecture](#hexagonal-architecture)
+- [Project Structure](#project-structure)
+  - [Adapters](#adapters)
+  - [Core](#core)
+  - [Ports](#ports)
+- [Example Projects](#example-projects)
+
 ## Hexagonal Architecture
 
 The idea of Hexagonal Architecture is to put inputs and outputs at the edges of our design. Business logic should not depend on whether we expose a REST or a GraphQL API, and it should not depend on where we get data from — a database, a microservice API exposed via gRPC or REST, or just a simple CSV file.
@@ -37,7 +46,7 @@ This directory contains the applications core business logic, with the following
 
 There are four main concepts/modules that define the core: **Domains**, **Entities**, **Services**, and **Value Objects**
 
-- `Domains` can be thought of as "Orchestrators/Interactors" for domain use cases. They orchestrate multiple services and implement business rules and validation logic specific to a domain
+- `Domains` can be thought of as "Orchestrators" for domain use cases. They orchestrate multiple services and implement business rules and validation logic specific to a domain
 - `Entities` are the domain objects
 - `Services` handle any actions specific to an entity.
 - `Value Objects`
