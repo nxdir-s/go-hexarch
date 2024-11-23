@@ -4,13 +4,13 @@ This repository serves as a template and documentation on how to implement Hexag
 
 ### Table of Contents
 
-- [Hexagonal Architecture](#hexagonal-architecture)
-- [Project Structure](#project-structure)
-  - [cmd](#cmd)
-  - [adapters](#adapters)
-  - [core](#core)
-  - [ports](#ports)
-- [Example Projects](#example-projects)
+- #### [Hexagonal Architecture](#hexagonal-architecture)
+- #### [Project Structure](#project-structure)
+  - #### [cmd](#cmd)
+  - #### [adapters](#adapters)
+  - #### [core](#core)
+  - #### [ports](#ports)
+- #### [Example Projects](#example-projects)
 
 ## Hexagonal Architecture
 
