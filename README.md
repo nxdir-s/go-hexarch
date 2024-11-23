@@ -47,7 +47,7 @@ The adapters directory contains the **primary** and **secondary** modules that h
 
 ### core
 
-The core directory contains the applications business logic and will utilize a lite version of Domain Driven Design
+The core directory contains the applications business logic and will utilize a lite version of Domain-Driven Design
 
 There are four main concepts that define the core: **Domains**, **Entities**, **Services**, and **Value Objects**
 
