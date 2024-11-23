@@ -14,7 +14,7 @@ When any driver wants to use the application at a port, it sends a request that 
 
 ## Ports
 
-The term “ports” simply refers to entry points to the application core. They contain (typically technology-neutral) interfaces that make it possible for external entities to obtain a set of rules for communicating with the core. Since the ports are essentially just gateways, another agent is necessary to actually make the communication happen. These are adapters.
+The term “ports” simply refers to entry points to the application core. They contain (typically technology-neutral) interfaces that make it possible for external entities to obtain a set of rules for communicating with the core. Since the ports are essentially just gateways, another agent is necessary to actually make the communication happen: the adapters
 
 ## Adapters
 
