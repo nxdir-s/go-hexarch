@@ -51,9 +51,9 @@ The core directory contains the applications business logic and will utilize a l
 
 There are four main concepts that define the core: **Domains**, **Entities**, **Services**, and **Value Objects**
 
-- `Domains` can be thought of as "Orchestrators" for domain use cases. They orchestrate multiple services and implement business rules and validation logic specific to a domain
+- `Domains` can be thought of as "orchestrators" for domain use cases. They orchestrate services to implement business rules and validation logic specific to a domain
 - `Entities` are the domain objects
-- `Services` handle any actions specific to an entity.
+- `Services` perform tasks specific to an entity and handle multiple data sources
 - `Value Objects` represent shared immutable data types
 
 ### ports
@@ -71,7 +71,7 @@ The ports directory contains the port definitions that define how the core will 
 
 ### GoMux
 
-CLI tool for Tmux setup
+A command-line tool for Tmux setup
 
 > #### [github.com/nxdir-s/gomux](https://github.com/nxdir-s/gomux)
 
