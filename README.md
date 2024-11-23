@@ -20,8 +20,6 @@ The idea of Hexagonal Architecture is to put inputs and outputs at the edges of 
 
 ## Project Structure
 
-The following diagrams the project structure
-
 ```
 .
 ├── cmd
