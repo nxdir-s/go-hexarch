@@ -18,7 +18,7 @@ The term “ports” simply refers to entry points to the application core. They
 
 ## Adapters
 
-The adapters actively initiate the communication between external entities and the core. Each port can serve many adapters. A common example of a controller could be a REST controller or any other API request handler
+Adapters actively initiate the communication between external entities and the core. Each port can serve many adapters. A common example of a controller could be a REST controller or any other API request handler
 
 Here is an extremely important thing about the adapters architecture – ports/adapters work with both the external systems that start the communication (driving side) and the ones that receive it (driven side). But the exact mechanism slightly differs
 
