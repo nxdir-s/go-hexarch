@@ -77,6 +77,6 @@ A command-line tool for Tmux setup
 
 ### IdleRpg
 
-A more complex example using a monorepo that contains a websocket game server as well as an http server for the UI. Currently a work in progress
+An example using a monorepo that contains a websocket game server and a http server for the UI (WIP)
 
 > #### [github.com/nxdir-s/IdleRpg](https://github.com/nxdir-s/IdleRpg)
