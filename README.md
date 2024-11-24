@@ -1,6 +1,6 @@
 # Go HexArch
 
-This repository serves as a template and documentation on how to implement Hexagonal Architecture within a golang application
+This repository serves as a template and documentation on implementing Hexagonal Architecture within a golang application
 
 ### Table of Contents
 
@@ -41,11 +41,11 @@ The following diagrams the project structure
 
 The cmd directory contains your applications main modules. The `main.go` file will be responsible for setting up dependencies and running the application
 
-### adapters
+### internal/adapters
 
 The adapters directory contains the **primary** and **secondary** modules that handle communication between external entities and the core of the application. Adapters will be responsible for any data tranformations required for communication, as well as error handling, telemetry, and logging
 
-### core
+### internal/core
 
 The core directory contains the applications business logic and will utilize a lite version of Domain-Driven Design
 
@@ -56,7 +56,7 @@ There are four main concepts that define the core: **Domains**, **Entities**, **
 - `Services` perform tasks specific to an entity and handle multiple data sources
 - `Value Objects` represent shared immutable data types
 
-### ports
+### internal/ports
 
 The ports directory contains the port definitions that define how the core will interact with internal and external entities. It is split up into the following files:
 
