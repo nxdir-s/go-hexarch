@@ -74,9 +74,3 @@ The ports directory contains the port definitions that define how the core will 
 A command-line tool for Tmux setup
 
 > #### [github.com/nxdir-s/gomux](https://github.com/nxdir-s/gomux)
-
-### IdleRpg
-
-An example using a monorepo that contains a websocket game server and a http web server (WIP)
-
-> #### [github.com/nxdir-s/idlerpg](https://github.com/nxdir-s/idlerpg)
