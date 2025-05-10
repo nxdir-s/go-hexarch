@@ -63,7 +63,7 @@ The ports directory contains the port definitions that define how the core will 
 - `core.go`
   - Contains interfaces that define how services and domains can interact with each other
 - `primary.go`
-  - Contains interfaces that define how the core allows external entities to interact with it. Ex. `APIPort` defines how the core will allow APIs to interact with it
+  - Contains interfaces that define how the core allows external entities to interact with it. Ex. `ports.API` defines how the core will allow APIs to interact with it
 - `secondary.go`
   - Contains interfaces that define how the core wants to drive/interact with external entities. These entities are usually databases or some other data source, but can also be other internal applications or even a library
 
