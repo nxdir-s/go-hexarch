@@ -4,12 +4,12 @@ import (
 	"context"
 )
 
-type SecondaryAdapter struct{}
+type DatabaseAdapter struct{}
 
-func NewSecondaryAdapter() (*SecondaryAdapter, error) {
-	return &SecondaryAdapter{}, nil
+func NewDatabaseAdapter() *DatabaseAdapter {
+	return &DatabaseAdapter{}
 }
 
-func (a *SecondaryAdapter) Run(ctx context.Context) error {
+func (a *DatabaseAdapter) Update(ctx context.Context) error {
 	return nil
 }

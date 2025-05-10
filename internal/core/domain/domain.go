@@ -18,14 +18,14 @@ type Orchestrator struct {
 	service ports.Service
 }
 
-func NewOrchestrator(service ports.Service) (*Orchestrator, error) {
+func NewOrchestrator(service ports.Service) *Orchestrator {
 	return &Orchestrator{
 		service: service,
-	}, nil
+	}
 }
 
 func (d *Orchestrator) Run(ctx context.Context) error {
-	if err := d.service.Run(ctx); err != nil {
+	if err := d.service.Update(ctx); err != nil {
 		return &ErrRunDomain{err}
 	}
 
