@@ -2,6 +2,6 @@ package ports
 
 import "context"
 
-type PrimaryPort interface {
+type API interface {
 	Run(ctx context.Context) error
 }

@@ -6,16 +6,16 @@ import (
 	"github.com/nxdir-s/go-hexarch/internal/ports"
 )
 
-type PrimaryAdapter struct {
+type APIAdapter struct {
 	domain ports.Orchestrator
 }
 
-func NewPrimaryAdapter(domain ports.Orchestrator) (*PrimaryAdapter, error) {
-	return &PrimaryAdapter{
+func NewAPIAdapter(domain ports.Orchestrator) *APIAdapter {
+	return &APIAdapter{
 		domain: domain,
-	}, nil
+	}
 }
 
-func (a *PrimaryAdapter) Run(ctx context.Context) error {
+func (a *APIAdapter) Run(ctx context.Context) error {
 	return a.domain.Run(ctx)
 }

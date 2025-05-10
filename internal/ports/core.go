@@ -7,5 +7,5 @@ type Orchestrator interface {
 }
 
 type Service interface {
-	Run(ctx context.Context) error
+	Update(ctx context.Context) error
 }

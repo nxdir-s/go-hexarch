@@ -7,15 +7,15 @@ import (
 )
 
 type Service struct {
-	adapter ports.SecondaryPort
+	adapter ports.Database
 }
 
-func NewService(adapter ports.SecondaryPort) (*Service, error) {
+func NewService(adapter ports.Database) *Service {
 	return &Service{
 		adapter: adapter,
-	}, nil
+	}
 }
 
-func (s *Service) Run(ctx context.Context) error {
-	return s.adapter.Run(ctx)
+func (s *Service) Update(ctx context.Context) error {
+	return s.adapter.Update(ctx)
 }
